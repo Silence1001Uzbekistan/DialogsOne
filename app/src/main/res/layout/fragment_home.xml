@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+    <Button
+        android:id="@+id/alertDialog"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_margin="2dp"
+        android:text="Alert Dialog"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/customDialog"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_margin="2dp"
+        android:text="Custom dialog"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/datePickerDialog"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_margin="2dp"
+        android:text="DatePicker Dialog"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/timePickerDialog"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_margin="2dp"
+        android:text="TimePicker Dialog"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/bottomSheetDialog"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_margin="2dp"
+        android:text="BottomSheet Dialog"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/snackbarDialog"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_margin="2dp"
+        android:text="Snackbar"
+        android:textAllCaps="false" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/snackbar_sheet_dialog" />
+
+</LinearLayout>
